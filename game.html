@@ -5,41 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <!--not sure if font avesome link should be here or at the end-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Game</title>
 </head>
-<body>
+<body id="game-body">
     <div class="container">
         <div id="quiz">
             <div id="quiz-header">
                 <div class="quiz-header-info">
-                    <p id="quiz-progress">
-                        Question
-                    </p>
-                </div>
-                <div class="quiz-header-score">
-                    <!-- not sure if i should use p or h1-->
-                    <p class="scores">Correct Answers <span id="score">0</span></p>
-                    <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+                    <h1 id="quiz-title">
+                        Title of game
+                    </h1>
                 </div>
             </div>
             <div id="questions">Placeholder text (question)</div>
             <div class="choices">
-                <!--Not sure if i should use p or h1, and the data-number (add it later)-->
-                <p class="choice-perfix">A</p>
-                <p class="choice" >Choice</p>
+                <button>
+                    <!--Not sure if i should use p or h1, and the data-number (add it later)-->
+                    <p class="choice-perfix">A</p>
+                    <p class="choice" >Choice</p>
+                </button>
             </div>
             <div class="choices">
-                <!--Not sure if i should use p or h1, and the data-number (add it later)-->
-                <p class="choice-perfix">B</p>
-                <p class="choice" >Choice</p>
+                <button>
+                    <!--Not sure if i should use p or h1, and the data-number (add it later)-->
+                    <p class="choice-perfix">B</p>
+                    <p class="choice" >Choice</p>
+                </button>
             </div>
             <div class="choices">
+                <button>
                 <!--Not sure if i should use p or h1, and the data-number (add it later)-->
                 <p class="choice-perfix">C</p>
                 <p class="choice" >Choice</p>
+                </button>
+            </div>
+            <div class="choices">
+                <button>
+                <!--Not sure if i should use p or h1, and the data-number (add it later)-->
+                <p class="choice-perfix">D</p>
+                <p class="choice" >Choice</p>
+                </button>
+            </div>
+            <div class="quiz-bottom-score">
+                <!-- not sure if i should use p or h1-->
+                <p class="scores">Correct Answers <span id="score">0</span></p>
+                <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+            </div>
+            <div id="next-btn">
+                <button id="next">Next</button>
             </div>
         </div>
     </div>
+        
     <script src="assets/js/script.js"></script>
 </body>
 </html>
