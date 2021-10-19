@@ -11,10 +11,18 @@
 <div class="home-page">
     <div class="home">
         <h1>Lets Play!</h1>
-        <a href="game.html">Play</a>
-        <div class="username">Username input</div>
+        <p id="username-text">Creat your desired username below</p>
+        <div class="username-container">
+            <form class="username-form">
+                <input type="text" name="username-input" id="username" placeholder="Enter your username">
+                <button class="input-btn" type="submit">Submit</button>
+            </form>
+            <button class="input-btn" id="play" type="button">
+                <a href="/game.html">Play</a>
+            </button>
+        </div>
     </div>
 </div>
-    
+<script src="assets/js/script.js"></script>
 </body>
 </html>
