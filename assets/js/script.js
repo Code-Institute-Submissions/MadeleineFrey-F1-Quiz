@@ -57,9 +57,9 @@ const questionBank = [
     } 
 ]
 
-const playButton = document.getElementById('play-btn')
-const nextButton = document.getElementById('next')
-playButton.addEventListener('click', startGame)
+// const playButton = document.getElementById('play-btn')
+// const nextButton = document.getElementById('next')
+// playButton.addEventListener('click', startGame)
 // nextButton.addEventListener('click', getNextQuestion)
 
 // choices here (buttons) + eventlistener
@@ -69,10 +69,10 @@ const secondChoiceBtn = document.getElementById('secondBtn');
 const thirdChoiceBtn = document.getElementById('thirdBtn');
 const fourthChoiceBtn = document.getElementById('fourthBtn');
 
-firstChoiceBtn.addEventListener('click', checkAnswer);
-secondChoiceBtn.addEventListener('click', checkAnswer);
-thirdChoiceBtn.addEventListener('click', checkAnswer);
-fourthChoiceBtn.addEventListener('click', checkAnswer);
+// firstChoiceBtn.addEventListener('click', checkAnswer);
+// secondChoiceBtn.addEventListener('click', checkAnswer);
+// thirdChoiceBtn.addEventListener('click', checkAnswer);
+// fourthChoiceBtn.addEventListener('click', checkAnswer);
 
 
 let i = 0;
@@ -125,9 +125,11 @@ if(maxQuestion == questionBank.length -1)
 }
 
 
-function checkAnswer()
+function checkAnswer(event)
 {
+    let userAnswer = event.target.getAttribute("data-name");
 
+    console.log(userAnswer);
 }
 
 function rightAnswer() 
