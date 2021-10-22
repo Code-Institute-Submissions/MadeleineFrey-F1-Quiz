@@ -5,7 +5,7 @@ const questionBank = [
         choiceB: '1no',
         choiceC: '1noyes',
         choiceD: '1yesno',
-        correctAnswer: 'choiceA'
+        correctAnswer: 'A'
     },
     {
         question: '2What are you?',
@@ -13,7 +13,7 @@ const questionBank = [
         choiceB: '1no',
         choiceC: '1noyes',
         choiceD: '1yesno',
-        correctAnswer: 'choiceA'
+        correctAnswer: 'A'
     },
     {
         question: '3What are you?',
@@ -21,7 +21,7 @@ const questionBank = [
         choiceB: '1no',
         choiceC: '1noyes',
         choiceD: '1yesno',
-        correctAnswer: 'choiceA'
+        correctAnswer: 'D'
     },
     {
         question: '4What are you?',
@@ -29,7 +29,7 @@ const questionBank = [
         choiceB: '1no',
         choiceC: '1noyes',
         choiceD: '1yesno',
-        correctAnswer: 'choiceA'
+        correctAnswer: 'C'
     },
     {
         question: '5What are you?',
@@ -37,7 +37,7 @@ const questionBank = [
         choiceB: '1no',
         choiceC: '1noyes',
         choiceD: '1yesno',
-        correctAnswer: 'choiceA'
+        correctAnswer: 'B'
     }, 
     {
         question: '6What are you?',
@@ -45,7 +45,7 @@ const questionBank = [
         choiceB: '1no',
         choiceC: '1noyes',
         choiceD: '1yesno',
-        correctAnswer: 'choiceA'
+        correctAnswer: 'B'
     }, 
     {
         question: '7What are you?',
@@ -53,7 +53,7 @@ const questionBank = [
         choiceB: '1no',
         choiceC: '1noyes',
         choiceD: '1yesno',
-        correctAnswer: 'choiceA'
+        correctAnswer: 'C'
     } 
 ]
 
@@ -128,18 +128,27 @@ if(maxQuestion == questionBank.length -1)
 function checkAnswer(event)
 {
     let userAnswer = event.target.getAttribute("data-name");
-
     console.log(userAnswer);
+
+    if (userAnswer == questionBank[i].correctAnswer){
+        console.log("Rätttt")
+        rightAnswer();
+    }else {
+        console.log("Felllll")
+        wrongAnswer();
+    }
 }
 
 function rightAnswer() 
 {
-   
+    console.log('yeeeop');
+document.getElementById('score').innerHTML++
 }
 
 function wrongAnswer() 
 {
-   
+    console.log('neopop');
+    document.getElementById('incorrect').innerHTML++
 }
 
 function result() {
