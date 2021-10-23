@@ -50,6 +50,15 @@ color: #3C787E;
     max-width: 80%;
 }
 
+#quiz-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+}
+#num-of-q {
+   font-size: 1.5rem;
+}
+
 .choices {
     display: flex;
     justify-content: center;

@@ -120,6 +120,8 @@ if(maxQuestion == questionBank.length -1)
  document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
  document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 
+ document.getElementById('current-num').innerHTML++
+
  }
    
 }
