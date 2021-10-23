@@ -101,6 +101,15 @@ function startGame() {
 
 }
 
+function jumpToLastQuestion() {
+
+    while(maxQuestion < questionBank.length -1){
+        console.log("loop")
+        getNextQuestion(); 
+    }
+    result();
+}
+
  function getNextQuestion() { 
 
     console.log('Räknar upp??')
@@ -111,11 +120,7 @@ if(maxQuestion == questionBank.length -1) {
 
  } else {
 
-     console.log("räknar upp")
-     maxQuestion++;
-
-     console.log("räknar upp i")
-     i++;
+    i++;
 
     document.getElementById('questions').innerHTML = questionBank[i].question;
     document.getElementById('choiceA').innerHTML = questionBank[i].choiceA;
@@ -123,6 +128,11 @@ if(maxQuestion == questionBank.length -1) {
     document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
     document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 
+    console.log("räknar upp")
+    maxQuestion++;
+
+    console.log(maxQuestion)
+    
     document.getElementById('current-num').innerHTML++
 
  } 
@@ -140,6 +150,8 @@ function checkAnswer(event) {
         console.log("Felllll")
         wrongAnswer();
     }
+
+    getNextQuestion();
 }
 
 function rightAnswer() {
@@ -159,6 +171,13 @@ function result() {
 
     console.log("DEN LYSSNAR")
 
-
-
+    Swal.fire( {
+        title: 'Good Job! you got',
+        text: document.getElementById('score').innerHTML + ' / 10',
+        showCancelButton: true,
+        }).then((result) => {
+            if(result.isConfirmed) {
+                startGame();
+            }
+        })
 }

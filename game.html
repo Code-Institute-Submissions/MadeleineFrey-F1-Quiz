@@ -50,11 +50,12 @@
                 <p class="scores" >Incorrect Answers <span id="incorrect">0</span></p>
             </div>
             <div id="next-btn">
-                <button id="play-btn">Play</button>
-                <button id="next" onclick="getNextQuestion()">Next</button>
+                <button id="play-btn" onclick="jumpToLastQuestion()">End</button>
+                <button id="next" onclick="getNextQuestion()">Skip one</button>
             </div>
         </div>
     </div>  
     <script src="assets/js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
