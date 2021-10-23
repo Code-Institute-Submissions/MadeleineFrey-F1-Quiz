@@ -7,8 +7,8 @@ body {
     min-height: 100%;
     width: 100vw;
     height: 100vh;
-    background: #3C787E;
-    color: #D0CD94;
+    background: #ebd6c4;
+    color: #D5212E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,13 +22,13 @@ font-size: 1.3rem;
 
 #username {
     height: 1.5rem;
-    background: #D0CD94;
-    color: #3C787E;
+    background: #D5212E;
+    color: #ffd1a9;
 }
 
 .input-btn {
-background: #D0CD94;
-color: #3C787E;
+background: #D5212E;
+color: #ffd1a9;
 }
 
 #play {
@@ -39,7 +39,7 @@ color: #3C787E;
 }
 
 .input-btn a {
-    color: #3C787E;
+    color: #ffd1a9;
     text-decoration: none;
 }
 
@@ -70,18 +70,23 @@ color: #3C787E;
 .choices button {
     width: 70%;
     height: 4rem;
-    background: #D0CD94;
+    background: #D5212E;
+    border-radius: 12px;
+    border-color: #ca1320;
 }
 
 .choice-perfix, .choice {
     margin: 3px;
     font-size: .8rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #3C787E;
+    color: #ffd1a9;
 }
 
 #next, #play-btn {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #3C787E;
-    background: #D0CD94;
+    color: #ffd1a9;
+    background: #D5212E;
+    border-radius: 6px;
+    border-color: #ca1320;
+
 }
