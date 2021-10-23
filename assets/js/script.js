@@ -94,11 +94,23 @@ document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 
 
 function startGame() {
-    // move play button to where it is suposed to be
+    console.log('Restert')
 
-    currentQuestionIndex = 0
-    getNextQuestion()  
+    maxQuestion = 0;
 
+    i = 0;
+
+    document.getElementById('current-num').innerHTML = 1;
+
+    document.getElementById('score').innerHTML = 0;
+
+    document.getElementById('incorrect').innerHTML = 0;
+ 
+document.getElementById('questions').innerHTML = questionBank[i].question;
+document.getElementById('choiceA').innerHTML = questionBank[i].choiceA;
+document.getElementById('choiceB').innerHTML = questionBank[i].choiceB;
+document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
+document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 }
 
 function jumpToLastQuestion() {
