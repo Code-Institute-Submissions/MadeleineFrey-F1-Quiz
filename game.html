@@ -23,45 +23,38 @@
             <div id="questions"></div>
             <div class="choices">
                 <button id="firstBtn" data-name="A" onclick="checkAnswer(event)">
-                    <!--Not sure if i should use the data-number (add it later?)-->
                     <p class="choice-perfix" id="choice-a" data-name="A">A</p>
                     <p class="choice" id="choiceA" data-name="A">Choice</p>
                 </button>
             </div>
             <div class="choices">
                 <button id="secondBtn" data-name="B" onclick="checkAnswer(event)">
-                    <!--Not sure if i should use p or h1, and the data-number (add it later)-->
                     <p class="choice-perfix" id="choice-b" data-name="B">B</p>
                     <p class="choice" id="choiceB" data-name="B">Choice</p>
                 </button>
             </div>
             <div class="choices">
                 <button id="thirdBtn" data-name="C" onclick="checkAnswer(event)">
-                <!--Not sure if i should use p or h1, and the data-number (add it later)-->
                 <p class="choice-perfix" id="choice-c" data-name="C">C</p>
                 <p class="choice" id="choiceC" data-name="C">Choice</p>
                 </button>
             </div>
             <div class="choices">
                 <button id="fourthBtn" data-name="D" onclick="checkAnswer(event)"> 
-                <!--Not sure if i should use p or h1, and the data-number (add it later)-->
                 <p class="choice-perfix" id="choice-d" data-name="D">D</p>
                 <p class="choice" id="choiceD" data-name="D">Choice</p>
                 </button>
             </div>
             <div class="quiz-bottom-score">
-                <!-- not sure if i should use p or h1-->
                 <p class="scores">Correct Answers <span id="score">0</span></p>
                 <p class="scores" >Incorrect Answers <span id="incorrect">0</span></p>
             </div>
             <div id="next-btn">
                 <button id="play-btn">Play</button>
                 <button id="next" onclick="getNextQuestion()">Next</button>
-
             </div>
         </div>
-    </div>
-        
+    </div>  
     <script src="assets/js/script.js"></script>
 </body>
 </html>

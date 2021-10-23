@@ -1,5 +1,6 @@
 
-/* web dev simp */
+/* länka? */
+/* Change color! to red white black */
 body {
     padding: 0;
     margin: 0;
@@ -29,6 +30,7 @@ font-size: 1.3rem;
 background: #D0CD94;
 color: #3C787E;
 }
+
 #play {
     margin-top: 5px;
     margin-left: 15%;
@@ -40,8 +42,6 @@ color: #3C787E;
     color: #3C787E;
     text-decoration: none;
 }
-
-
 
 /* Game page */
 

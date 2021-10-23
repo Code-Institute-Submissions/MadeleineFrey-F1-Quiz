@@ -1,3 +1,4 @@
+//change topic to F1
 const questionBank = [
     {
         question: '1What are you?',
@@ -87,64 +88,64 @@ document.getElementById('choiceB').innerHTML = questionBank[i].choiceB;
 document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
 document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 
-
+//Do comments on the function
+//Remove consol.log() later
+//username if you have time
 
 
 function startGame() {
-currentQuestionIndex = 0
-getNextQuestion()
+    // move play button to where it is suposed to be
 
-    
+    currentQuestionIndex = 0
+    getNextQuestion()  
+
 }
-
-
 
  function getNextQuestion() { 
 
     console.log('Räknar upp??')
-if(maxQuestion == questionBank.length -1) 
-{
+if(maxQuestion == questionBank.length -1) {
+
     console.log("innan result")
     result();
 
  } else {
+
      console.log("räknar upp")
      maxQuestion++;
 
      console.log("räknar upp i")
      i++;
 
- document.getElementById('questions').innerHTML = questionBank[i].question;
- document.getElementById('choiceA').innerHTML = questionBank[i].choiceA;
- document.getElementById('choiceB').innerHTML = questionBank[i].choiceB;
- document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
- document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
+    document.getElementById('questions').innerHTML = questionBank[i].question;
+    document.getElementById('choiceA').innerHTML = questionBank[i].choiceA;
+    document.getElementById('choiceB').innerHTML = questionBank[i].choiceB;
+    document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
+    document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 
- document.getElementById('current-num').innerHTML++
+    document.getElementById('current-num').innerHTML++
 
- }
-   
+ } 
 }
 
+function checkAnswer(event) {
 
-function checkAnswer(event)
-{
     let userAnswer = event.target.getAttribute("data-name");
     console.log(userAnswer);
 
     if (userAnswer == questionBank[i].correctAnswer){
         console.log("Rätttt")
         rightAnswer();
-    }else {
+    } else {
         console.log("Felllll")
         wrongAnswer();
     }
 }
 
-function rightAnswer() 
-{
+function rightAnswer() {
+
     console.log('yeeeop');
-document.getElementById('score').innerHTML++
+    document.getElementById('score').innerHTML++
 }
 
 function wrongAnswer() 
@@ -153,7 +154,10 @@ function wrongAnswer()
     document.getElementById('incorrect').innerHTML++
 }
 
+// show result in a div?
 function result() {
+
     console.log("DEN LYSSNAR")
+
 
 }
