@@ -5,24 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Game</title>
 </head>
-<body id="home-body">
-<div class="home-page">
-    <div class="home">
-        <h1>Lets Play!</h1>
-        <p id="username-text">Creat your desired username below</p>
-        <div class="username-container">
-            <form class="username-form">
-                <input type="text" name="username-input" id="username" placeholder="Enter your username">
-                <button class="input-btn" id="username-submit" type="button">Submit</button>
-            </form>
-            <button class="input-btn" id="play" type="button">
-                <a href="/game.html">Play</a>
-            </button>
+<body id="game-body">
+    <div class="container">
+        <div id="quiz">
+            <div id="quiz-header">
+                <div class="quiz-header-info">
+                    <h1 id="quiz-title">
+                        Formula 2021 Quiz 
+                    </h1>
+                </div>
+                <div><p id="num-of-q"><span id="current-num">1</span>/7</p></div>
+            </div>
+            <div id="questions"></div>
+            <div class="choices">
+                <button id="first-Btn" data-name="A" onclick="checkAnswer(event)">
+                    <p class="choice-perfix" id="choice-a" data-name="A">A</p>
+                    <p class="choice" id="choiceA" data-name="A">Choice</p>
+                </button>
+            </div>
+            <div class="choices">
+                <button id="second-Btn" data-name="B" onclick="checkAnswer(event)">
+                    <p class="choice-perfix" id="choice-b" data-name="B">B</p>
+                    <p class="choice" id="choiceB" data-name="B">Choice</p>
+                </button>
+            </div>
+            <div class="choices">
+                <button id="third-Btn" data-name="C" onclick="checkAnswer(event)">
+                <p class="choice-perfix" id="choice-c" data-name="C">C</p>
+                <p class="choice" id="choiceC" data-name="C">Choice</p>
+                </button>
+            </div>
+            <div class="choices">
+                <button id="fourth-Btn" data-name="D" onclick="checkAnswer(event)"> 
+                <p class="choice-perfix" id="choice-d" data-name="D">D</p>
+                <p class="choice" id="choiceD" data-name="D">Choice</p>
+                </button>
+            </div>
+            <div class="quiz-bottom-score">
+                <p class="scores">Correct Answers <span id="score">0</span></p>
+                <p class="scores" >Incorrect Answers <span id="incorrect">0</span></p>
+            </div>
+            <div id="next-btn">
+                <button id="play-btn" onclick="jumpToLastQuestion()">End</button>
+                <button id="next" onclick="getNextQuestion()">Skip one</button>
+            </div>
         </div>
-    </div>
-</div>
-<script src="assets/js/script.js"></script>
+    </div>  
+    <script src="assets/js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
