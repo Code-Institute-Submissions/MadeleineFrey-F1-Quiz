@@ -15,35 +15,6 @@ body {
     align-items: center;
 }
 
-/* Home page */
-
-/* #username-text {
-font-size: 1.3rem;
-}
-
-#username {
-    height: 1.5rem;
-    background: #D5212E;
-    color: #ffd1a9;
-}
-
-.input-btn {
-background: #D5212E;
-color: #ffd1a9;
-}
-
-#play {
-    margin-top: 5px;
-    margin-left: 15%;
-    height: 40px;
-    width: 100px;
-}
-
-.input-btn a {
-    color: #ffd1a9;
-    text-decoration: none;
-} */
-
 /* Game page */
 
 .container {

@@ -56,7 +56,7 @@ const questionBank = [
         choiceD: 'Third',
         correctAnswer: 'C'
     } 
-]
+];
 
 let i = 0;
 let maxQuestion = 0;
@@ -130,7 +130,7 @@ if(maxQuestion == questionBank.length -1) {
 
     maxQuestion++;
     
-    document.getElementById('current-num').innerHTML++
+    document.getElementById('current-num').innerHTML++;
  } 
 }
 
@@ -162,7 +162,7 @@ function checkAnswer(event) {
 
 function rightAnswer() {
 
-    document.getElementById('score').innerHTML++
+    document.getElementById('score').innerHTML++;
 }
 
 /**
@@ -171,7 +171,7 @@ function rightAnswer() {
 
 function wrongAnswer() 
 {
-    document.getElementById('incorrect').innerHTML++
+    document.getElementById('incorrect').innerHTML++;
 }
 
 /**
@@ -179,6 +179,12 @@ function wrongAnswer()
  * The alert shows the finished score.
  * Lets the user chose if they want to end the quiz or play again.
  */
+
+/**
+ * Credit
+ * Used recipe gallery to clarify how to write the code below properly from SweetAlert2
+ * https://sweetalert2.github.io/
+*/
 
 function result() {
 
@@ -190,5 +196,5 @@ function result() {
             if(result.isConfirmed) {
                 startGame();
             }
-        })
+        });
 }
