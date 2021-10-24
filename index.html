@@ -22,31 +22,31 @@
             <div id="questions"></div>
             <div class="choices">
                 <button id="first-Btn" class="btn" data-name="A" onclick="checkAnswer(event)">
-                    <p class="choice-perfix" id="choice-a" data-name="A">A</p>
-                    <p class="choice" id="choiceA" data-name="A">Choice</p>
+                    <span class="choice-perfix" id="choice-a" data-name="A">A </span>
+                    <span class="choice" id="choiceA" data-name="A">Choice</span>
                 </button>
             </div>
             <div class="choices">
                 <button id="second-Btn" class="btn" data-name="B" onclick="checkAnswer(event)">
-                    <p class="choice-perfix" id="choice-b" data-name="B">B</p>
-                    <p class="choice" id="choiceB" data-name="B">Choice</p>
+                    <span class="choice-perfix" id="choice-b" data-name="B">B </span>
+                    <span class="choice" id="choiceB" data-name="B">Choice</span>
                 </button>
             </div>
             <div class="choices">
                 <button id="third-Btn" class="btn" data-name="C" onclick="checkAnswer(event)">
-                <p class="choice-perfix" id="choice-c" data-name="C">C</p>
-                <p class="choice" id="choiceC" data-name="C">Choice</p>
+                <span class="choice-perfix" id="choice-c" data-name="C">C </span>
+                <span class="choice" id="choiceC" data-name="C">Choice</span>
                 </button>
             </div>
             <div class="choices">
                 <button id="fourth-Btn" class="btn" data-name="D" onclick="checkAnswer(event)"> 
-                <p class="choice-perfix" id="choice-d" data-name="D">D</p>
-                <p class="choice" id="choiceD" data-name="D">Choice</p>
+                <span class="choice-perfix" id="choice-d" data-name="D">D </span>
+                <span class="choice" id="choiceD" data-name="D">Choice</span>
                 </button>
             </div>
             <div class="quiz-bottom-score">
-                <p class="scores">Correct Answers <span id="score">0</span></p>
-                <p class="scores" >Incorrect Answers <span id="incorrect">0</span></p>
+                <div><span class="scores">Correct Answers <span id="score">0</span></span></div>
+                <div><span class="scores" >Incorrect Answers <span id="incorrect">0</span></span></div>
             </div>
             <div id="next-btn">
                 <button id="end" onclick="jumpToLastQuestion()">End</button>

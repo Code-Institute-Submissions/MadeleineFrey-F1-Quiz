@@ -58,28 +58,8 @@ const questionBank = [
     } 
 ]
 
-// const playButton = document.getElementById('play-btn')
-// const nextButton = document.getElementById('next')
-// playButton.addEventListener('click', startGame)
-// nextButton.addEventListener('click', getNextQuestion)
-
-// choices here (buttons) + eventlistener
-
-// const firstChoiceBtn = document.getElementById('firstBtn');
-// const secondChoiceBtn = document.getElementById('secondBtn');
-// const thirdChoiceBtn = document.getElementById('thirdBtn');
-// const fourthChoiceBtn = document.getElementById('fourthBtn');
-
-// firstChoiceBtn.addEventListener('click', checkAnswer);
-// secondChoiceBtn.addEventListener('click', checkAnswer);
-// thirdChoiceBtn.addEventListener('click', checkAnswer);
-// fourthChoiceBtn.addEventListener('click', checkAnswer);
-
-
 let i = 0;
 let maxQuestion = 0;
-
-
 
 document.getElementById('questions').innerHTML = questionBank[i].question;
 document.getElementById('choiceA').innerHTML = questionBank[i].choiceA;
@@ -87,9 +67,12 @@ document.getElementById('choiceB').innerHTML = questionBank[i].choiceB;
 document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
 document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 
+/**
+ * Resets all values start value.
+ * Makes it possible to play the quiz again.
+ */
 
 function startGame() {
-    console.log('Restert')
 
     maxQuestion = 0;
 
@@ -108,21 +91,31 @@ document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
 document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 }
 
+/**
+ * While loop to get through all of the questions.
+ * Runs the result function at the end to get the result.
+ */
+
 function jumpToLastQuestion() {
 
     while(maxQuestion < questionBank.length -1){
-        console.log('loop')
+        
         getNextQuestion(); 
+
     }
+
     result();
 }
 
+/**
+ * If statement to log questions from question bank.
+ * When maxQuestion gets to the last question in the array, the result function will run.
+ */
+
  function getNextQuestion() { 
 
-    console.log('Räknar upp??')
 if(maxQuestion == questionBank.length -1) {
 
-    console.log('innan result')
     result();
 
  } else {
@@ -135,47 +128,59 @@ if(maxQuestion == questionBank.length -1) {
     document.getElementById('choiceC').innerHTML = questionBank[i].choiceC;
     document.getElementById('choiceD').innerHTML = questionBank[i].choiceD;
 
-    console.log('räknar upp')
     maxQuestion++;
-
-    console.log(maxQuestion)
     
     document.getElementById('current-num').innerHTML++
-
  } 
 }
+
+/**
+ * Checks the user’s answer and compares it to the right answer to the question.
+ * Runs the right function depending on the user’s answer.
+ */
 
 function checkAnswer(event) {
 
     let userAnswer = event.target.getAttribute('data-name');
-    console.log(userAnswer);
 
     if (userAnswer == questionBank[i].correctAnswer){
-        console.log('Rätttt')
+
         rightAnswer();
+
     } else {
-        console.log('Felllll')
+
         wrongAnswer();
+
     }
 
     getNextQuestion();
 }
 
+/**
+ * Increment correct score if the user answers correctly
+ */
+
 function rightAnswer() {
 
-    console.log('yeeeop');
     document.getElementById('score').innerHTML++
 }
 
+/**
+ * Increment the incorrect score if the user answers incorrectly
+ */
+
 function wrongAnswer() 
 {
-    console.log('neopop');
     document.getElementById('incorrect').innerHTML++
 }
 
-function result() {
+/**
+ * Triggers sweetalert2 when the user is finished with the game.
+ * The alert shows the finished score.
+ * Lets the user chose if they want to end the quiz or play again.
+ */
 
-    console.log("DEN LYSSNAR")
+function result() {
 
     Swal.fire( {
         title: 'Good Job! you got',
