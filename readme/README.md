@@ -61,7 +61,7 @@ Formula One, also called F1 in short is the fastest single-seater motorsport rac
 
 ### Screenshots (Of Finnished Site)
 
-* [Game page](Screenshot.png)
+* [Game page](media/Screenshot.png)
 
 ## Features
 ---
