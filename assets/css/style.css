@@ -27,9 +27,11 @@ body {
     justify-content: center;
     font-size: 2.3rem;
 }
+
 i {
     margin-left: 10px;
 }
+
 #num-of-q {
    font-size: 1.6rem;
 }
@@ -53,8 +55,7 @@ i {
     border-color: #ca1320;
 }
 
-
-    .btn:hover, #end:hover, #next:hover  {
+.btn:hover, #end:hover, #next:hover  {
     border-color: #460c10;
     
 }
@@ -80,6 +81,5 @@ i {
     background: #D5212E;
     border-radius: 6px;
     border-color: #ca1320;
-
 }
 

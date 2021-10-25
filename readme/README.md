@@ -33,17 +33,13 @@ Formula One, also called F1 in short is the fastest single-seater motorsport rac
 ### Design
 
 * The design of the  web application meets accessibility guidelines, presents a structured layout and follows the principles of UX design and navigation model 
-* contrast between background and foreground colors to help the visually impaired
+* Contrast between background and foreground colors to help the visually impaired
 * The graphics are consistent in style and color throughout the site.
 
 
 ### Choice of color
 
 * The color scheme is based on what color you associate F1 with to make it easier for the user to recognize the site as an F1-inspired game quiz.
-
-<p>
-The color scheme is based on what color you associate F1 with to make it easier for the user to recognize the site as an F1-inspired game quiz.
-</p>
 
 ### Responsive Design
 
@@ -52,7 +48,6 @@ The color scheme is based on what color you associate F1 with to make it easier 
 ### Mockups
 
 [Ami.responsivedesign](http://ami.responsivedesign.is/) was used to creat the mockups below.
-
 
 * [Mockups](media/allD.png)
 
@@ -124,6 +119,9 @@ When the user has finished the quiz an alert made with sweet alert shows on the 
 ---
 
 ### Screen Size Testing
+
+* Testing has ben done to mobile, tablet and desktop. 
+* There is no issues with the different screen sizes.
 
 ### Browser Testing
 
