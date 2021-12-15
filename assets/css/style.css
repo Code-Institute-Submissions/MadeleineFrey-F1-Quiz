@@ -4,15 +4,12 @@
 body {
     font-family: 'Zen Kurenaido', sans-serif;
     padding: 0;
-    margin: 0;
-    min-height: 100%;
+    min-height: 600px;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background: #ebd6c4;
     color: #D5212E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 100px;
 }
 
 /* Game page */
@@ -83,3 +80,15 @@ i {
     border-color: #ca1320;
 }
 
+footer {
+    height: 65px;
+    width: 100%;
+    background-color: #D5212E;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #ffd1a9;
+}
