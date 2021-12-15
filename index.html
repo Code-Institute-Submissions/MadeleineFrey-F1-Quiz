@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Game</title>
 </head>
+<!-- <section> -->
 <body id="game-body">
-    <div class="container">
+    <header id="quiz-header">
+        <div class="quiz-header-info">
+            <h1 id="quiz-title">
+                Formula 2021 Quiz<i class="fas fa-flag-checkered"></i>
+            </h1>
+        </div>
+    </header>
+    <section class="container">
         <div id="quiz">
-            <div id="quiz-header">
-                <div class="quiz-header-info">
-                    <h1 id="quiz-title">
-                        Formula 2021 Quiz<i class="fas fa-flag-checkered"></i>
-                    </h1>
-                </div>
-                <div><p id="num-of-q"><span id="current-num">1</span>/7</p></div>
+            <div>
+                <p id="num-of-q"><span id="current-num">1</span>/7</p>
             </div>
-            <div id="questions"></div>
-            <div class="choices">
-                <button id="first-Btn" class="btn" data-name="A" onclick="checkAnswer(event)">
-                    <span class="choice-perfix" id="choice-a" data-name="A">A </span>
-                    <span class="choice" id="choiceA" data-name="A">Choice</span>
-                </button>
-            </div>
-            <div class="choices">
-                <button id="second-Btn" class="btn" data-name="B" onclick="checkAnswer(event)">
-                    <span class="choice-perfix" id="choice-b" data-name="B">B </span>
-                    <span class="choice" id="choiceB" data-name="B">Choice</span>
-                </button>
-            </div>
-            <div class="choices">
-                <button id="third-Btn" class="btn" data-name="C" onclick="checkAnswer(event)">
+        <div id="questions"></div>
+        <div class="choices">
+            <button id="first-Btn" class="btn" data-name="A" onclick="checkAnswer(event)">
+                <span class="choice-perfix" id="choice-a" data-name="A">A </span>
+                <span class="choice" id="choiceA" data-name="A">Choice</span>
+            </button>
+        </div>
+        <div class="choices">
+            <button id="second-Btn" class="btn" data-name="B" onclick="checkAnswer(event)">
+                <span class="choice-perfix" id="choice-b" data-name="B">B </span>
+                <span class="choice" id="choiceB" data-name="B">Choice</span>
+            </button>
+        </div>
+        <div class="choices">
+            <button id="third-Btn" class="btn" data-name="C" onclick="checkAnswer(event)">
                 <span class="choice-perfix" id="choice-c" data-name="C">C </span>
                 <span class="choice" id="choiceC" data-name="C">Choice</span>
-                </button>
-            </div>
-            <div class="choices">
-                <button id="fourth-Btn" class="btn" data-name="D" onclick="checkAnswer(event)"> 
+            </button>
+        </div>
+        <div class="choices">
+            <button id="fourth-Btn" class="btn" data-name="D" onclick="checkAnswer(event)">
                 <span class="choice-perfix" id="choice-d" data-name="D">D </span>
                 <span class="choice" id="choiceD" data-name="D">Choice</span>
-                </button>
-            </div>
-            <div class="quiz-bottom-score">
-                <div><span class="scores">Correct Answers <span id="score">0</span></span></div>
-                <div><span class="scores" >Incorrect Answers <span id="incorrect">0</span></span></div>
-            </div>
-            <div id="next-btn">
-                <button id="end" onclick="jumpToLastQuestion()">End</button>
-                <button id="next" onclick="getNextQuestion()">Skip one</button>
-            </div>
+            </button>
         </div>
-    </div>  
+        <div class="quiz-bottom-score">
+            <div><span class="scores">Correct Answers <span id="score">0</span></span></div>
+            <div><span class="scores">Incorrect Answers <span id="incorrect">0</span></span></div>
+        </div>
+        <div id="next-btn">
+            <button id="end" onclick="jumpToLastQuestion()">End</button>
+            <button id="next" onclick="getNextQuestion()">Skip one</button>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>Thank you for playing the 2021 Formula one quiz</p>
+    </footer>
+    <!--  </section> -->
     <script src="assets/js/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
