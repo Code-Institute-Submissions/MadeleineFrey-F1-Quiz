@@ -191,11 +191,12 @@ function result() {
     Swal.fire( {
         title: 'Good Job! you got',
         text: document.getElementById('score').innerHTML + ' / 7',
-        showCancelButton: true,
         confirmButtonColor: "#D5212E"
         }).then((result) => {
             if(result.isConfirmed) {
                 startGame();
             }
         });
+    
+    startGame();
 }

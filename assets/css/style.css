@@ -17,6 +17,7 @@ body {
 .container {
     width:800px;
     max-width: 80%;
+    margin: 0 auto;
 }
 
 #quiz-title {
@@ -91,4 +92,9 @@ footer {
     margin-bottom: 0px;
     padding-bottom: 0px;
     color: #ffd1a9;
+}
+
+#footer-text {
+    font-size: 1.4rem;
+    text-align: center;
 }
