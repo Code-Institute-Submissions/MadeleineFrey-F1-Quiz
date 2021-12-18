@@ -197,6 +197,6 @@ function result() {
                 startGame();
             }
         });
-    
+        
     startGame();
 }
