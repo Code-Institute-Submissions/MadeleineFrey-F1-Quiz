@@ -102,9 +102,8 @@ Formula One, also called F1 in short is the fastest single-seater motorsport rac
 When the user has finished the quiz an alert made with sweet alert shows on the screen.
 </p>
 
-* The alert shows the score out of available questions and then two choices of buttons.
+* The alert shows the score out of available questions and then an OK button.
 * OK, restarts the game and set the score to 0.
-* Cancel, close the alert window, and shows the last question again.
 
 ### Future features
 
